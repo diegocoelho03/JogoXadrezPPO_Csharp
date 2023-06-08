@@ -6,10 +6,7 @@ namespace Xadrez_Console
     {
         static void Main(string[] args)
         {
-            Posicao P;
-            P = new Posicao(3, 4);
-
-            Console.WriteLine("POsicao " + P);
+            Tabu tab = new Tabu(8, 8);
         }
     }
 }
