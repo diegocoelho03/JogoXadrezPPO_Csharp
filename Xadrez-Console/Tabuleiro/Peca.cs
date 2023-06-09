@@ -1,6 +1,8 @@
-﻿namespace Tabuleiro
+﻿using System.Runtime.Intrinsics.Arm;
+
+namespace Tabuleiro
 {
-    internal class Peca
+    internal abstract class Peca
     {
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; }
@@ -19,5 +21,7 @@
         {
             qtdMovimentos++;
         }
+
+        public abstract bool[,] MovimentosPossiveis(); 
     }
 }
